@@ -7,7 +7,7 @@ router.post('/', async(req, res) => {
   const { name, email, message } = req.body;
   let transport = nodemailer.createTransport({
     service: 'hotmail',
-    host: 'smtp.live.com',
+    host: 'smtp.office365.com',
     secure: false,
     auth: {
       user: process.env.USER,
